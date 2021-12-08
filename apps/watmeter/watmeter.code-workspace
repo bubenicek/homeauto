@@ -1,0 +1,37 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "/home/bubenik/projects/embedx/src/core"
+		},
+		{
+			"path": "/home/bubenik/projects/embedx/src/cpu"
+		},
+		{
+			"path": "/home/bubenik/projects/embedx/src/platform"
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"system.h": "c",
+			"sysqueue.h": "c",
+			"trace_undef.h": "c",
+			"mining_jsonrpc.h": "c",
+			"array": "c",
+			"chrono": "c",
+			"functional": "c",
+			"istream": "c",
+			"ostream": "c",
+			"ratio": "c",
+			"tuple": "c",
+			"type_traits": "c",
+			"utility": "c"
+		},
+		"files.exclude": {
+			"**/.vscode": true
+		},
+		"git.ignoreLimitWarning": true
+	}
+}

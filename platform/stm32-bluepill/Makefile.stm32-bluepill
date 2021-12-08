@@ -1,0 +1,8 @@
+PROJECT_TARGET_DIRS = . $(EMBEDX_ROOT)/core/sys/rtos 
+
+PROJECT_SOURCEFILES += board.c
+
+## CPU
+CPU=STM32F103xB
+CPU_USB_DEVICE=CDC
+include $(EMBEDX_ROOT)/cpu/stm32f1/Makefile.inc

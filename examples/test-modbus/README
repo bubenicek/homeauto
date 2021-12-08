@@ -1,0 +1,39 @@
+Zapojeni prototypu MODBUS -> relay0-15
+======================================
+
+   {GPIO_PORTD, PIN2, GPIO_MODE_OUTPUT, 1},         /* Relay1 */   \
+   {GPIO_PORTC, PIN4, GPIO_MODE_OUTPUT, 1},         /* Relay2 */  \
+   {GPIO_PORTD, PIN3, GPIO_MODE_OUTPUT, 1},         /* Relay3 */   \
+   {GPIO_PORTC, PIN3, GPIO_MODE_OUTPUT, 1},         /* Relay4 */  \
+   {GPIO_PORTD, PIN4, GPIO_MODE_OUTPUT, 1},         /* Relay5 */  \
+   {GPIO_PORTC, PIN2, GPIO_MODE_OUTPUT, 1},         /* Relay6 */  \
+   {GPIO_PORTD, PIN5, GPIO_MODE_OUTPUT, 1},         /* Relay7 */  \
+   {GPIO_PORTC, PIN1, GPIO_MODE_OUTPUT, 1},         /* Relay8 */  \
+   {GPIO_PORTD, PIN6, GPIO_MODE_OUTPUT, 1},         /* Relay9 */  \
+   {GPIO_PORTC, PIN0, GPIO_MODE_OUTPUT, 1},         /* Relay10 */  \
+   {GPIO_PORTD, PIN7, GPIO_MODE_OUTPUT, 1},         /* Relay11 */  \
+   {GPIO_PORTB, PIN4, GPIO_MODE_OUTPUT, 1},         /* Relay12 */  \
+   {GPIO_PORTB, PIN0, GPIO_MODE_OUTPUT, 1},         /* Relay13 */  \
+   {GPIO_PORTB, PIN3, GPIO_MODE_OUTPUT, 1},         /* Relay14 */  \
+   {GPIO_PORTB, PIN1, GPIO_MODE_OUTPUT, 1},         /* Relay15 */  \
+   {GPIO_PORTB, PIN2, GPIO_MODE_OUTPUT, 1},         /* Relay16 */  \
+   {GPIO_PORTB, PIN5, GPIO_MODE_OUTPUT, 0},         /* LED system */ \
+   {GPIO_PORTC, PIN5, GPIO_MODE_OUTPUT, 0},         /* RS485 DIR */ \
+
+
+Zapojeni RS485
+---------------
+
+ +---------+                         +-------------------+
+ |         |                         |                   |---- VCC +5V
+ | Arduino | (PC5) ----------|--- RE |   RS485 prevodnik |
+ |         |                 |--- DE |                   |
+ |         |                         |                   |---- A
+ |         | RX (PD0)------------ RO |                   |---- B
+ |         | TX (PD1)------------ DI |                   |
+ |         |                         |                   |
+ |         |                         |                   |---- GND
+ +---------+                         +-------------------+
+
+
+SW debug UART = PB5   (spoklecne s LED)

@@ -1,0 +1,14 @@
+PROJECT_TARGET_DIRS = . ../../core/sys/rtos ../../core/dev/mem
+PROJECT_SOURCEFILES += board.c
+PROJECT_SOURCEFILES += hal_console.c
+PROJECT_SOURCEFILES += hal_time.c
+PROJECT_SOURCEFILES += hal_gpio.c
+PROJECT_SOURCEFILES += hal_spi.c
+PROJECT_SOURCEFILES += hal_uart.c
+PROJECT_SOURCEFILES += hal_wdg.c
+PROJECT_SOURCEFILES += hal_pm.c
+
+PROJECT_SOURCEFILES += S25FL127.c
+
+## CPU
+include ../../cpu/stm32f1/Makefile.inc

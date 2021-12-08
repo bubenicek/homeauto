@@ -1,0 +1,11 @@
+src/android/.metadata
+src/android/TempSensorMonitor/bin
+*.o
+*.bin
+*.hex
+*.exe
+*.pbd
+*.apk
+*.pbi
+*.layout
+*.depend

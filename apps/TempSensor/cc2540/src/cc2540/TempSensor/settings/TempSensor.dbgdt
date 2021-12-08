@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<Project>
+  <Desktop>
+    <Static>
+      <Debug-Log>
+        <PreferedWindows>
+          
+          
+          
+          
+        <Position>3</Position><ScreenPosX>0</ScreenPosX><ScreenPosY>0</ScreenPosY><Windows/></PreferedWindows>
+        
+        
+      <ColumnWidth0>20</ColumnWidth0><ColumnWidth1>1381</ColumnWidth1></Debug-Log>
+      <Build>
+        <ColumnWidth0>20</ColumnWidth0>
+        <ColumnWidth1>1035</ColumnWidth1>
+        <ColumnWidth2>276</ColumnWidth2>
+        <ColumnWidth3>69</ColumnWidth3>
+        <PreferedWindows>
+          <Position>3</Position>
+          <ScreenPosX>0</ScreenPosX>
+          <ScreenPosY>0</ScreenPosY>
+          <Windows>
+            <Window>
+              <Factory>Debug-Log</Factory>
+            </Window>
+          </Windows>
+        </PreferedWindows>
+      </Build>
+      <Workspace>
+        <ColumnWidths>
+          
+          
+          
+          
+        <Column0>223</Column0><Column1>27</Column1><Column2>27</Column2><Column3>27</Column3></ColumnWidths>
+      </Workspace>
+      <Disassembly>
+        <PreferedWindows>
+          
+          
+          
+          
+        <Position>2</Position><ScreenPosX>0</ScreenPosX><ScreenPosY>0</ScreenPosY><Windows/></PreferedWindows>
+        
+        
+        
+      <MixedMode>1</MixedMode><CodeCovShow>1</CodeCovShow><InstrProfShow>1</InstrProfShow></Disassembly>
+    <Watch><Format><struct_types/><watch_formats/></Format><PreferedWindows><Position>2</Position><ScreenPosX>0</ScreenPosX><ScreenPosY>0</ScreenPosY><Windows/></PreferedWindows><Column0>100</Column0><Column1>100</Column1><Column2>100</Column2><Column3>100</Column3></Watch></Static>
+    <Windows>
+      
+    <Wnd2>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-30848-16423</Identity>
+            <TabName>Workspace</TabName>
+            <Factory>Workspace</Factory>
+            <Session>
+              
+            <NodeDict><ExpandedNode>TempSensor</ExpandedNode><ExpandedNode>TempSensor/application</ExpandedNode><ExpandedNode>TempSensor/application/Drivers</ExpandedNode><ExpandedNode>TempSensor/common</ExpandedNode><ExpandedNode>TempSensor/devices</ExpandedNode><ExpandedNode>TempSensor/devices/cc254x</ExpandedNode><ExpandedNode>TempSensor/miniBLE</ExpandedNode></NodeDict></Session>
+          </Tab>
+        </Tabs>
+        
+      <SelectedTab>0</SelectedTab></Wnd2></Windows>
+    <Editor>
+      
+      
+      
+      
+    <Pane><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\src\temp_sensor.c</Filename><XPos>0</XPos><YPos>102</YPos><SelStart>3659</SelStart><SelEnd>3659</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\src\config.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>260</SelStart><SelEnd>260</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\src\main.c</Filename><XPos>0</XPos><YPos>21</YPos><SelStart>493</SelStart><SelEnd>493</SelEnd></Tab><ActiveTab>2</ActiveTab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\components\miniBLE\miniBLE.h</Filename><XPos>0</XPos><YPos>76</YPos><SelStart>4494</SelStart><SelEnd>4504</SelEnd></Tab></Pane><ActivePane>0</ActivePane><Sizes><Pane><X>1000000</X><Y>1000000</Y></Pane></Sizes><SplitMode>1</SplitMode></Editor>
+    <Positions>
+      
+      
+      
+      
+      
+    <Top><Row0><Sizes><Toolbar-012dae60><key>iaridepm.enu1</key></Toolbar-012dae60></Sizes></Row0><Row1><Sizes><Toolbar-03870168><key>debuggergui.enu1</key></Toolbar-03870168></Sizes></Row1></Top><Left><Row0><Sizes><Wnd2><Rect><Top>-2</Top><Left>-2</Left><Bottom>786</Bottom><Right>297</Right><x>-2</x><y>-2</y><xscreen>200</xscreen><yscreen>200</yscreen><sizeHorzCX>138889</sizeHorzCX><sizeHorzCY>234192</sizeHorzCY><sizeVertCX>207639</sizeVertCX><sizeVertCY>922717</sizeVertCY></Rect></Wnd2></Sizes></Row0></Left><Right><Row0><Sizes/></Row0></Right><Bottom><Row0><Sizes/></Row0></Bottom><Float><Sizes/></Float></Positions>
+  </Desktop>
+</Project>
+
+

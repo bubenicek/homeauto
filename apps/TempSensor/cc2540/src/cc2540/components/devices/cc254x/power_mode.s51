@@ -1,0 +1,123 @@
+/*******************************************************************************
+*  Filename:        power_mode.s51
+*  Revised:         $Date: 2014-06-26 16:14:11 +0200 (to, 26 jun 2014) $
+*  Revision:        $Revision: 13250 $
+*
+*  Description:     Assembly file for handling alignment requirement for 
+*                   entering power modes
+*
+*  Note             The PCON.IDLE = 1 instruction must be aligned to avoid 
+*                   FLASH access to remain high and incur unnecessary power 
+*                   consumption. The PCON.IDLE = 1 instruction must also be 
+*                   aligned in order to make the execution of the next 
+*                   instruction deterministic. 
+* 
+*                   The provided methods EnterSleepModeDisableInterruptsOnWakeup 
+*                   and EnterSleepModeProcessInterruptsOnWakeup ensure 
+*                   determnistic and predictable behaviour with respect to this 
+*                   issue.
+*
+*                   Two more methods are also included to allow a pattern were 
+*                   a global variable is written to PCON. This allows 
+*                   applications from safeguarding against scenarios were 
+*                   interrupt is raised after the decision to enter sleepmode 
+*                   was taken.
+*
+*  Copyright (C) 2014 Texas Instruments Incorporated - http://www.ti.com/
+*
+*
+*  Redistribution and use in source and binary forms, with or without
+*  modification, are permitted provided that the following conditions
+*  are met:
+*
+*    Redistributions of source code must retain the above copyright
+*    notice, this list of conditions and the following disclaimer.
+*
+*    Redistributions in binary form must reproduce the above copyright
+*    notice, this list of conditions and the following disclaimer in the
+*    documentation and/or other materials provided with the distribution.
+*
+*    Neither the name of Texas Instruments Incorporated nor the names of
+*    its contributors may be used to endorse or promote products derived
+*    from this software without specific prior written permission.
+*
+*  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+*  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+*  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+*  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+*  OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+*  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+*  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+*  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+*  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+*  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+*  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+*
+******************************************************************************/
+
+
+
+/*******************************************************************************
+* INCLUDES
+*/
+// Include chip specific IO definition file
+#if (chip == 2541)
+  #include <ioCC2541.h>
+#elif (chip == 2543)
+  #include <ioCC2543.h>
+#elif (chip == 2544)
+  #include <ioCC2544.h>
+#elif (chip == 2545)
+  #include <ioCC2545.h>
+#endif
+
+
+        NAME PowerMode
+        
+
+        EXTERN __INIT_DATA_Z
+        PUBLIC EnterSleepModeFlag 
+        
+        PUBLIC EnterSleepModeDisableInterruptsOnWakeup
+        FUNCTION EnterSleepModeDisableInterruptsOnWakeup,0201H
+    
+        PUBLIC EnterSleepModeProcessInterruptsOnWakeup
+        FUNCTION EnterSleepModeProcessInterruptsOnWakeup,0201H
+        
+        PUBLIC EnterSleepModeDisableInterruptsOnWakeupUsingFlag
+        FUNCTION EnterSleepModeDisableInterruptsOnWakeupUsingFlag,0201H
+
+        PUBLIC EnterSleepModeProcessInterruptsOnWakeupUsingFlag
+        FUNCTION EnterSleepModeProcessInterruptsOnWakeupUsingFlag,0201H
+        
+        RSEG NEAR_CODE:CODE:NOROOT(2)           // Ensures 2-byte boundary instruction
+EnterSleepModeDisableInterruptsOnWakeupUsingFlag:
+        MOV     PCON,EnterSleepModeFlag
+        CLR     EA
+        RET
+
+        RSEG NEAR_CODE:CODE:NOROOT(2)
+EnterSleepModeProcessInterruptsOnWakeupUsingFlag:
+        MOV     PCON,EnterSleepModeFlag
+        NOP                                     // This makes sure the ISR is called before this method returns
+        RET
+
+        RSEG NEAR_CODE:CODE:NOROOT(2)
+EnterSleepModeDisableInterruptsOnWakeup:
+        MOV     PCON,#1
+        CLR     EA
+        RET
+
+        RSEG NEAR_CODE:CODE:NOROOT(2)
+EnterSleepModeProcessInterruptsOnWakeup:
+        MOV     PCON,#1
+        NOP                                     // This makes sure the ISR is called before this method returns
+        RET
+
+// Create EnterSleepModeFlag
+        RSEG DATA_Z:DATA:NOROOT(0)
+EnterSleepModeFlag:
+        DS 1
+        REQUIRE __INIT_DATA_Z
+
+        END

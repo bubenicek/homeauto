@@ -1,0 +1,22 @@
+{
+	"folders": [
+        {
+            "path": "."
+        },
+        {
+            "path": "../../platform"
+        },
+        {
+            "path": "../../../embedx/core"
+        },
+        {
+            "path": "../../../embedx/cpu"
+        }
+    ],
+    "settings": {
+        "files.associations": {
+            "system.h": "c",
+            "usbd_msc.h": "c"
+        }
+    }
+}

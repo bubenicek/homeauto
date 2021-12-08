@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="test-stm8" />
+		<Option pch_mode="2" />
+		<Option compiler="sdcc" />
+		<Build>
+			<Target title="test1">
+				<Option output="test-stm8.hex" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="" />
+				<Option object_output="obj" />
+				<Option type="5" />
+				<Option compiler="sdcc" />
+				<Option projectCompilerOptionsRelation="0" />
+				<Compiler>
+					<Add option="--opt-code-size" />
+					<Add directory="../../cpu/stm8" />
+					<Add directory="../../cpu/stm8/drivers/include" />
+					<Add directory="../../core/sys" />
+					<Add directory="../../platform" />
+					<Add directory="src" />
+					<Add directory="../../" />
+					<Add directory="../../core" />
+				</Compiler>
+				<Linker>
+					<Add library="stm8" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-mstm8" />
+			<Add option="--opt-code-size" />
+			<Add option="-DSTM8S103" />
+			<Add option="-DPROJECT_TARGET_STM8RELAY=1" />
+		</Compiler>
+		<Unit filename="../../core/sys/compiler.h" />
+		<Unit filename="../../core/sys/openos/scheduler.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../core/sys/openos/scheduler.h" />
+		<Unit filename="../../core/sys/openos/timer.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../core/sys/openos/timer.h" />
+		<Unit filename="../../core/sys/system.h" />
+		<Unit filename="../../core/sys/trace.h" />
+		<Unit filename="../../core/sys/trace_undef.h" />
+		<Unit filename="../../cpu/stm8/drivers/include/stm8s.h" />
+		<Unit filename="../../cpu/stm8/drivers/include/stm8s_clk.h" />
+		<Unit filename="../../cpu/stm8/drivers/include/stm8s_exti.h" />
+		<Unit filename="../../cpu/stm8/drivers/include/stm8s_gpio.h" />
+		<Unit filename="../../cpu/stm8/drivers/include/stm8s_tim4.h" />
+		<Unit filename="../../cpu/stm8/drivers/include/stm8s_uart1.h" />
+		<Unit filename="../../cpu/stm8/drivers/src/stm8s_clk.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../cpu/stm8/drivers/src/stm8s_exti.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../cpu/stm8/drivers/src/stm8s_gpio.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../cpu/stm8/drivers/src/stm8s_tim4.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../cpu/stm8/drivers/src/stm8s_uart1.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../cpu/stm8/stm8s_conf.h" />
+		<Unit filename="../../cpu/stm8/stm8s_it.h" />
+		<Unit filename="../../platform/board.h" />
+		<Unit filename="../../platform/hal_console.h" />
+		<Unit filename="../../platform/hal_flash.h" />
+		<Unit filename="../../platform/hal_gpio.h" />
+		<Unit filename="../../platform/hal_led.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../platform/hal_led.h" />
+		<Unit filename="../../platform/hal_pm.h" />
+		<Unit filename="../../platform/hal_rand.h" />
+		<Unit filename="../../platform/hal_rtc.h" />
+		<Unit filename="../../platform/hal_spi.h" />
+		<Unit filename="../../platform/hal_time.h" />
+		<Unit filename="../../platform/hal_uart.h" />
+		<Unit filename="../../platform/hal_uuid.h" />
+		<Unit filename="../../platform/hal_wdg.h" />
+		<Unit filename="../../platform/stm8relay/board.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../platform/stm8relay/board.h" />
+		<Unit filename="../../platform/stm8relay/hal_gpio.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../platform/stm8relay/hal_time.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../platform/stm8relay/hal_uart.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/config.h" />
+		<Unit filename="src/main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

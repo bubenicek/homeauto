@@ -1,0 +1,93 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/bubenik/projects/homeauto/src/TempSensor/cc2540/src/android/TempSensorMonitor/app/src/main/AndroidManifest.xml:17:1-47:12
+INJECTED from /home/bubenik/projects/homeauto/src/TempSensor/cc2540/src/android/TempSensorMonitor/app/src/main/AndroidManifest.xml:17:1-47:12
+INJECTED from /home/bubenik/projects/homeauto/src/TempSensor/cc2540/src/android/TempSensorMonitor/app/src/main/AndroidManifest.xml:17:1-47:12
+INJECTED from /home/bubenik/projects/homeauto/src/TempSensor/cc2540/src/android/TempSensorMonitor/app/src/main/AndroidManifest.xml:17:1-47:12
+INJECTED from /home/bubenik/projects/homeauto/src/TempSensor/cc2540/src/android/TempSensorMonitor/app/src/main/AndroidManifest.xml:17:1-47:12
+INJECTED from /home/bubenik/projects/homeauto/src/TempSensor/cc2540/src/android/TempSensorMonitor/app/src/main/AndroidManifest.xml:17:1-47:12
+INJECTED from /home/bubenik/projects/homeauto/src/TempSensor/cc2540/src/android/TempSensorMonitor/app/src/main/AndroidManifest.xml:17:1-47:12
+	package
+		ADDED from /home/bubenik/projects/homeauto/src/TempSensor/cc2540/src/android/TempSensorMonitor/app/src/main/AndroidManifest.xml:18:11-39
+		INJECTED from /home/bubenik/projects/homeauto/src/TempSensor/cc2540/src/android/TempSensorMonitor/app/src/main/AndroidManifest.xml
+		INJECTED from /home/bubenik/projects/homeauto/src/TempSensor/cc2540/src/android/TempSensorMonitor/app/src/main/AndroidManifest.xml
+	android:versionName
+		ADDED from /home/bubenik/projects/homeauto/src/TempSensor/cc2540/src/android/TempSensorMonitor/app/src/main/AndroidManifest.xml:20:11-36
+		INJECTED from /home/bubenik/projects/homeauto/src/TempSensor/cc2540/src/android/TempSensorMonitor/app/src/main/AndroidManifest.xml
+		INJECTED from /home/bubenik/projects/homeauto/src/TempSensor/cc2540/src/android/TempSensorMonitor/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/bubenik/projects/homeauto/src/TempSensor/cc2540/src/android/TempSensorMonitor/app/src/main/AndroidManifest.xml:17:11-69
+	android:versionCode
+		ADDED from /home/bubenik/projects/homeauto/src/TempSensor/cc2540/src/android/TempSensorMonitor/app/src/main/AndroidManifest.xml:19:11-34
+		INJECTED from /home/bubenik/projects/homeauto/src/TempSensor/cc2540/src/android/TempSensorMonitor/app/src/main/AndroidManifest.xml
+		INJECTED from /home/bubenik/projects/homeauto/src/TempSensor/cc2540/src/android/TempSensorMonitor/app/src/main/AndroidManifest.xml
+uses-feature#android.hardware.bluetooth_le
+ADDED from /home/bubenik/projects/homeauto/src/TempSensor/cc2540/src/android/TempSensorMonitor/app/src/main/AndroidManifest.xml:25:5-89
+	android:required
+		ADDED from /home/bubenik/projects/homeauto/src/TempSensor/cc2540/src/android/TempSensorMonitor/app/src/main/AndroidManifest.xml:25:64-87
+	android:name
+		ADDED from /home/bubenik/projects/homeauto/src/TempSensor/cc2540/src/android/TempSensorMonitor/app/src/main/AndroidManifest.xml:25:19-63
+uses-permission#android.permission.BLUETOOTH
+ADDED from /home/bubenik/projects/homeauto/src/TempSensor/cc2540/src/android/TempSensorMonitor/app/src/main/AndroidManifest.xml:27:5-67
+	android:name
+		ADDED from /home/bubenik/projects/homeauto/src/TempSensor/cc2540/src/android/TempSensorMonitor/app/src/main/AndroidManifest.xml:27:22-65
+uses-permission#android.permission.BLUETOOTH_ADMIN
+ADDED from /home/bubenik/projects/homeauto/src/TempSensor/cc2540/src/android/TempSensorMonitor/app/src/main/AndroidManifest.xml:28:5-73
+	android:name
+		ADDED from /home/bubenik/projects/homeauto/src/TempSensor/cc2540/src/android/TempSensorMonitor/app/src/main/AndroidManifest.xml:28:22-71
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /home/bubenik/projects/homeauto/src/TempSensor/cc2540/src/android/TempSensorMonitor/app/src/main/AndroidManifest.xml:29:5-80
+	android:name
+		ADDED from /home/bubenik/projects/homeauto/src/TempSensor/cc2540/src/android/TempSensorMonitor/app/src/main/AndroidManifest.xml:29:22-78
+uses-permission#android.permission.INTERNET
+ADDED from /home/bubenik/projects/homeauto/src/TempSensor/cc2540/src/android/TempSensorMonitor/app/src/main/AndroidManifest.xml:30:5-67
+	android:name
+		ADDED from /home/bubenik/projects/homeauto/src/TempSensor/cc2540/src/android/TempSensorMonitor/app/src/main/AndroidManifest.xml:30:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /home/bubenik/projects/homeauto/src/TempSensor/cc2540/src/android/TempSensorMonitor/app/src/main/AndroidManifest.xml:31:5-79
+	android:name
+		ADDED from /home/bubenik/projects/homeauto/src/TempSensor/cc2540/src/android/TempSensorMonitor/app/src/main/AndroidManifest.xml:31:22-76
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from /home/bubenik/projects/homeauto/src/TempSensor/cc2540/src/android/TempSensorMonitor/app/src/main/AndroidManifest.xml:32:5-79
+	android:name
+		ADDED from /home/bubenik/projects/homeauto/src/TempSensor/cc2540/src/android/TempSensorMonitor/app/src/main/AndroidManifest.xml:32:22-76
+application
+ADDED from /home/bubenik/projects/homeauto/src/TempSensor/cc2540/src/android/TempSensorMonitor/app/src/main/AndroidManifest.xml:34:5-46:23
+	android:label
+		ADDED from /home/bubenik/projects/homeauto/src/TempSensor/cc2540/src/android/TempSensorMonitor/app/src/main/AndroidManifest.xml:34:18-50
+	android:icon
+		ADDED from /home/bubenik/projects/homeauto/src/TempSensor/cc2540/src/android/TempSensorMonitor/app/src/main/AndroidManifest.xml:35:18-54
+	android:theme
+		ADDED from /home/bubenik/projects/homeauto/src/TempSensor/cc2540/src/android/TempSensorMonitor/app/src/main/AndroidManifest.xml:36:18-65
+activity#com.tempsensor.DeviceScanActivity
+ADDED from /home/bubenik/projects/homeauto/src/TempSensor/cc2540/src/android/TempSensorMonitor/app/src/main/AndroidManifest.xml:38:9-45:20
+	android:screenOrientation
+		ADDED from /home/bubenik/projects/homeauto/src/TempSensor/cc2540/src/android/TempSensorMonitor/app/src/main/AndroidManifest.xml:40:19-55
+	android:label
+		ADDED from /home/bubenik/projects/homeauto/src/TempSensor/cc2540/src/android/TempSensorMonitor/app/src/main/AndroidManifest.xml:39:19-51
+	android:name
+		ADDED from /home/bubenik/projects/homeauto/src/TempSensor/cc2540/src/android/TempSensorMonitor/app/src/main/AndroidManifest.xml:38:19-67
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /home/bubenik/projects/homeauto/src/TempSensor/cc2540/src/android/TempSensorMonitor/app/src/main/AndroidManifest.xml:41:13-44:29
+action#android.intent.action.MAIN
+ADDED from /home/bubenik/projects/homeauto/src/TempSensor/cc2540/src/android/TempSensorMonitor/app/src/main/AndroidManifest.xml:42:17-68
+	android:name
+		ADDED from /home/bubenik/projects/homeauto/src/TempSensor/cc2540/src/android/TempSensorMonitor/app/src/main/AndroidManifest.xml:42:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /home/bubenik/projects/homeauto/src/TempSensor/cc2540/src/android/TempSensorMonitor/app/src/main/AndroidManifest.xml:43:17-76
+	android:name
+		ADDED from /home/bubenik/projects/homeauto/src/TempSensor/cc2540/src/android/TempSensorMonitor/app/src/main/AndroidManifest.xml:43:27-74
+uses-sdk
+INJECTED from /home/bubenik/projects/homeauto/src/TempSensor/cc2540/src/android/TempSensorMonitor/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/bubenik/projects/homeauto/src/TempSensor/cc2540/src/android/TempSensorMonitor/app/src/main/AndroidManifest.xml
+INJECTED from /home/bubenik/projects/homeauto/src/TempSensor/cc2540/src/android/TempSensorMonitor/app/src/main/AndroidManifest.xml
+INJECTED from /home/bubenik/projects/homeauto/src/TempSensor/cc2540/src/android/TempSensorMonitor/app/src/main/AndroidManifest.xml
+INJECTED from /home/bubenik/projects/homeauto/src/TempSensor/cc2540/src/android/TempSensorMonitor/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /home/bubenik/projects/homeauto/src/TempSensor/cc2540/src/android/TempSensorMonitor/app/src/main/AndroidManifest.xml
+		ADDED from /home/bubenik/projects/homeauto/src/TempSensor/cc2540/src/android/TempSensorMonitor/app/src/main/AndroidManifest.xml
+		INJECTED from /home/bubenik/projects/homeauto/src/TempSensor/cc2540/src/android/TempSensorMonitor/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/bubenik/projects/homeauto/src/TempSensor/cc2540/src/android/TempSensorMonitor/app/src/main/AndroidManifest.xml
+		ADDED from /home/bubenik/projects/homeauto/src/TempSensor/cc2540/src/android/TempSensorMonitor/app/src/main/AndroidManifest.xml
+		INJECTED from /home/bubenik/projects/homeauto/src/TempSensor/cc2540/src/android/TempSensorMonitor/app/src/main/AndroidManifest.xml

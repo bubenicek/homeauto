@@ -1,0 +1,25 @@
+PWM 25Khz pc fan control
+========================
+
+Pinout:
+ +---------+ 
+ |         | --> PA9   DEBUG_TX
+ | STM32   | <-- PA10  DEBUG_RX
+ |         | 
+ |         | --> PC13  LED
+ |         | 
+ |         | --> PA6   PWM output (Timer3 25Khz)
+ |         | 
+ |         | --> USB device
+ +---------+ 
+
+
+Poznamky:
+=========
+
+[ ] Unlock stm32f1 flash
+
+reset halt
+stm32f1x unlock 0
+reset halt
+

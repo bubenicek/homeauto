@@ -1,0 +1,7 @@
+
+
+Zmena adresy u china modulu 8xrelay, 8xinputs
+=============================================
+
+bin/modbusd -d /dev/ttyUSB0 -wr 0 16384 3
+
