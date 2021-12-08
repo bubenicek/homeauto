@@ -1,0 +1,2 @@
+# homeauto
+Home automation projects
